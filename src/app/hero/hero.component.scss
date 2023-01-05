@@ -1,0 +1,136 @@
+.hero-container {
+  background-color: #141d2f;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.shape {
+  width: 1920px;
+  position: absolute;
+  top: 95px;
+}
+
+.photo-shadow {
+  width: 670px;
+  height: 670px;
+  position: absolute;
+  bottom: -89px;
+}
+
+.photo {
+  height: 550px;
+  position: absolute;
+  bottom: 40px;
+  left: 100px;
+  @media (max-width:1300px){
+    height: 500px;
+  }
+}
+
+.container-header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  right: 190px;
+  top: 240px;
+  padding: 20px;
+
+  @media (max-width:1300px){
+    right: 100px;
+  }
+
+  @media (max-width:1100px){
+    right: 50px;
+  }
+
+  .header-text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  span {
+    font-size: 64px;
+    transform: rotate(270deg);
+    color: white;
+    font-weight: 400;
+    @media (max-width:1300px){
+      font-size: 54px;
+      margin-right: -20px;
+    }
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1 {
+      font-size: 70px;
+      color: white;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      @media (max-width:1300px){
+        font-size: 60px;
+      }
+    }
+
+    h3 {
+      font-size: 48px;
+      color: #4b47ff;
+      font-weight: 400;
+      margin-top: 0px;
+      margin-bottom: 5px;
+      @media (max-width:1300px){
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.scroll-down {
+  color: white;
+  font-size: 23px;
+  font-weight: 400;
+  position: absolute;
+  box-sizing: border-box;
+  right: 60px;
+  bottom: 0;
+  transform: rotate(90deg);
+
+  span {
+    margin-right: 10px;
+  }
+
+  img {
+    transform: rotate(270deg);
+  }
+}
+
+.container-social-media {
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  .blue-line {
+    height: 4px;
+    width: 100px;
+    background-color: #4B47ff;
+  }
+
+  img{
+    scale: 0.8;
+    cursor: pointer;
+
+    &:hover{
+      scale: 1;
+    }
+  }
+}
