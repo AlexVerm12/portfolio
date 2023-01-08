@@ -1,11 +1,11 @@
 .container-aboutme{
-    height: 600px;
+    height: 700px;
     width: 100vw;
     background-color: #141d2f;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 150px;
+    padding-top: 110px;
     background-image: url('./../../assets/img/bg-shadow-blue.png');
     background-repeat: no-repeat;
     background-size: 300px;
@@ -14,14 +14,15 @@
 
 .container-text{
     padding-left: 100px;
-    width: 400px;
+    width: 480px;
     color: white;
 
     h2{
-        font-size: 78px;
+        font-size: 90px;
         font-weight: 700;
         margin:0px;
         margin-bottom: 30px;
+        margin-top: 10px;
     }
 
     span{

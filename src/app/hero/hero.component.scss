@@ -1,7 +1,7 @@
 .hero-container {
   background-color: #141d2f;
   width: 100vw;
-  height: calc(100vh - 90px);
+  height: 600px;
   position: relative;
   margin-top: 75px;
 }
@@ -11,8 +11,6 @@
   height: 300px;
   position: absolute;
   top: 400px;
-
-  
 }
 
 .photo-shadow {
@@ -27,7 +25,6 @@
   position: absolute;
   bottom: 70px;
   left: 100px;
-
 }
 
 .container-header {
@@ -40,11 +37,11 @@
   top: 110px;
   padding: 20px;
 
-  @media (max-width:1300px){
+  @media (max-width: 1300px) {
     right: 100px;
   }
 
-  @media (max-width:1100px){
+  @media (max-width: 1100px) {
     right: 50px;
   }
 
@@ -58,9 +55,10 @@
     transform: rotate(270deg);
     color: white;
     font-weight: 400;
-    @media (max-width:1300px){
+    margin-right: -20px;
+    @media (max-width: 1300px) {
       font-size: 54px;
-      margin-right: -20px;
+      margin-right: -23px;
     }
   }
 
@@ -74,20 +72,26 @@
       font-size: 70px;
       color: white;
       margin-top: 0px;
-      margin-bottom: 5px;
-      @media (max-width:1300px){
+      margin-bottom: 0px;
+      @media (max-width: 1300px) {
         font-size: 60px;
+      }
+      @media (max-width: 1150px) {
+        font-size: 55px;
       }
     }
 
     h3 {
-      font-size: 48px;
+      font-size: 58px;
       color: #4b47ff;
       font-weight: 400;
       margin-top: 0px;
       margin-bottom: 5px;
-      @media (max-width:1300px){
-        font-size: 40px;
+      @media (max-width: 1300px) {
+        font-size: 49px;
+      }
+      @media (max-width: 1150px) {
+        font-size: 45px;
       }
     }
   }
@@ -124,14 +128,18 @@
   .blue-line {
     height: 4px;
     width: 100px;
-    background-color: #4B47ff;
+    background-color: #4b47ff;
   }
 
-  img{
+  a{
+    display: grid;
+  }
+
+  img {
     scale: 0.8;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       scale: 1;
     }
   }
