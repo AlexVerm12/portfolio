@@ -1,8 +1,21 @@
 .container-contactarea {
   width: 100vw;
   background-color: #141d2f;
-  padding-bottom: 50px;
+  padding-bottom: 200px;
   height: fit-content;
+  position: relative;
+  background-image: url('./../../assets/img/bg-shadow-blue3.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-position-x: 0px;
+  background-size: 400px;
+}
+
+.go-up{
+  position: absolute;
+  bottom: 50px;
+  right:100px;
+  cursor: pointer;
 }
 
 .header-contactarea {
@@ -30,7 +43,8 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
+
   .textarea {
     color: white;
     width: 500px;
@@ -44,15 +58,59 @@
   form{
     display: flex;
     flex-direction: column;
-    margin-right: 100px;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 30px;
+    margin-left: 40px;
+    padding-right: 100px;
+
+    .succesfull-message{
+      color: #1CE6B6;
+    }
+
+    .error-message-name{
+      font-size: 10px;
+      color: #E61C40;
+      text-align: left;
+      width: 100%;
+      padding-left: 20px;
+      opacity: 0;
+    }
+  
+    #name:not(:focus):not(:placeholder-shown):invalid ~ .error-message-name{
+      opacity: 100%;
+    }
+  
+    .error-message-email{
+      font-size: 10px;
+      color: #E61C40;
+      text-align: left;
+      width: 100%;
+      padding-left: 20px;
+      opacity: 0;
+    }
+  
+    #email:not(:focus):not(:placeholder-shown):invalid ~ .error-message-email{
+      opacity: 100%;
+    }
+  
+    .error-message-text{
+      font-size: 10px;
+      color: #E61C40;
+      text-align: left;
+      width: 100%;
+      padding-left: 20px;
+      opacity: 0;
+    }
+  
+    #text:not(:focus):not(:placeholder-shown):invalid ~ .error-message-text{
+      opacity: 100%;
+    }
 
     input{
         width: 500px;
         height: 40px;
-        margin-top: 20px;
+        margin-top: 10px;
         background-color: #141d2f;
         border: 1px solid #4b47ff;
         border-radius: 10px;
@@ -66,12 +124,32 @@
             font-size: 16px;
             color: white;
         }
+
+        &:focus{
+          border-color: #00BEE8;
+        }
+
+        &:not(:focus):not(:placeholder-shown):invalid {
+          border-color: #E61C40;
+          background-image: url('./../../assets/img/wrong.png');
+          background-repeat: no-repeat;
+          background-position-x: 466px;
+          background-position-y: 6px;
+         }
+
+         &:not(:focus):not(:placeholder-shown):valid {
+          border-color: #1CE6B6;
+          background-image: url('./../../assets/img/right.png');
+          background-repeat: no-repeat;
+          background-position-x: 466px;
+          background-position-y: 6px;
+         }
     }
 
     textarea{
         width: 500px;
         height: 250px;
-        margin-top: 20px;
+        margin-top: 10px;
         background-color: #141d2f;
         border: 1px solid #4b47ff;
         border-radius: 10px;
@@ -80,6 +158,8 @@
         outline: none;
         color: white;
         font-size: 16px;
+        resize: none;
+        
 
         &::placeholder{
             font-size: 16px;
@@ -87,6 +167,29 @@
             color: white;
         }
 
+        &:focus{
+          border-color: #00BEE8;
+        }
+
+        &:not(:focus):not(:placeholder-shown):invalid {
+          border-color: #E61C40;
+          background-image: url('./../../assets/img/wrong.png');
+          background-repeat: no-repeat;
+          background-position-x: 466px;
+          background-position-y: 6px;
+         }
+
+         &:not(:focus):not(:placeholder-shown):valid {
+          border-color: #1CE6B6;
+          background-image: url('./../../assets/img/right.png');
+          background-repeat: no-repeat;
+          background-position-x: 466px;
+          background-position-y: 6px;
+         }
     }
   }
+}
+
+.d-none{
+  display: none;
 }

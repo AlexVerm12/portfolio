@@ -1,0 +1,49 @@
+.container-footer{
+    width: 100vw;
+    height: 200px;
+    background: #141D2F;
+    border-top: 4px solid #00BEE8;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    box-sizing: border-box;
+
+}
+
+.container-social-media {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  
+    a{
+      display: grid;
+    }
+  
+    img {
+      scale: 0.8;
+      cursor: pointer;
+  
+      &:hover {
+        scale: 1;
+      }
+    }
+}
+
+.copyright{
+    color: white;
+    font-size: 21px;
+}
+.imprint{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.first-part{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

@@ -12,17 +12,6 @@
     z-index: 1000;
 }
 
-.logo{
-    color: white;
-    font-weight: 600;
-    font-size: 32px;
-    cursor: pointer;
-
-    &::first-letter{
-        color:#4B47FF;
-    }
-}
-
 .menu{
     display: flex;
     align-items: center;

@@ -17,9 +17,14 @@ body {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   margin-top: 30px;
+  cursor: pointer;
 
   &:hover{
     background-color: #4B47FF;
     padding: 20px 40px;
   }
+}
+
+.logo{
+width: 90px;
 }

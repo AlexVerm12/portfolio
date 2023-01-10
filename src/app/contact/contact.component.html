@@ -7,21 +7,50 @@
   <div class="contactarea">
     <div class="textarea">
       <h3>Got a problem to solve?</h3>
-      <span> 
+      <span>
         Contact me through this form, I am interested in hearing you, knowing
         your ideas and contributing to your projects with my work.
       </span>
-      <span>
-        <br><br>Need a Frontend developer? <b>Contact me!</b>
-      </span>
+      <span> <br /><br />Need a Frontend developer? <b>Contact me!</b> </span>
     </div>
 
-    <form action="" method="post">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your text" id="" required></textarea>
-        <button class="main-button">Send message :)</button>
-
-    </form>
+    <div>
+      <form (submit)="sendMail()" ngNativeValidate #myForm>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          placeholder="Your name"
+          onfocus="this.placeholder=''"
+          #nameField
+          required
+        />
+        <span class="error-message-name">Your name is required</span>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          placeholder="Your email"
+          onfocus="this.placeholder=''"
+          #emailField
+          required
+        />
+        <span class="error-message-email">Your email is required</span>
+        <textarea
+          name="message"
+          placeholder="Your text"
+          onfocus="this.placeholder=''"
+          id="text"
+          #textField
+          required
+        ></textarea>
+        <span id="text" class="error-message-text">Your message is empty</span>
+        <button #button class="main-button">Send message :)</button>
+        <span id="successful" class="succesfull-message d-none">Your email has been send successfully!</span>
+      </form>
+    </div>
   </div>
+  <a href="#hero" style="display: grid">
+    <img class="go-up" src="./assets/img/go-up-button.png" />
+  </a>
 </div>
