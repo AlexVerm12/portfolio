@@ -12,6 +12,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { StartComponent } from './start/start.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
     SkillsComponent,
     FooterComponent,
     ImpressumComponent,
+    StartComponent,
   
   ],
   imports: [
