@@ -47,3 +47,34 @@
     align-items: center;
     flex-direction: column;
 }
+
+.imprint-mobile{
+  display: none;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (max-width:1050px){
+  .imprint{
+    display: none;
+  }
+
+  .imprint-mobile{
+    display: flex;
+  }
+
+  .container-footer{
+    height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px;
+    gap: 20px;
+
+}
+.logo{
+  margin-bottom: 10px;
+}
+}

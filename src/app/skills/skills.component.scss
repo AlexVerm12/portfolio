@@ -111,3 +111,47 @@
   height: 4px;
   background-color: #4b47ff;
 }
+
+@media (max-width:1050px){
+  .header {
+    gap: 17px;
+  }
+  
+  .blue-line {
+    width: 20px;
+  }
+
+  .container-skills{
+    flex-direction: column-reverse;
+    gap: 80px;
+    height: fit-content;
+    padding: 120px 0px;
+  }
+
+  .skills-leftside-container {
+    gap: 77px;
+    width: 100%;
+    padding: 0px 37px;
+    box-sizing: border-box;
+    justify-content: center;
+
+    img{
+      height: 60px;
+    }
+  }
+
+  .container-text{
+    width: 100%;
+    align-items: self-end;
+
+    span{
+      width: 500px;
+      text-align: end;
+      padding-right: 37px;
+    }
+  }
+}
+
+@media(max-width:700px){
+  
+}

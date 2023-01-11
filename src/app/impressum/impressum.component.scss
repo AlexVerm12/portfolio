@@ -1,8 +1,16 @@
-.impressum{
+.container-impressum{
     color: white;
     background: #141D2F;
-    padding-top: 200px;
-    padding-left: 100px;
-    height: calc(100vh - 300px);
+    height: calc(100vh - 100px);
     width: 100vw;
+}
+.impressum{
+    padding-left: 100px;
+    padding-top: 150px;
+}
+
+@media(max-width:1050px){
+.impressum{
+    padding-left: 37px;
+}
 }

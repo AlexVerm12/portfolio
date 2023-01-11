@@ -14,8 +14,7 @@
 }
 
 .photo-shadow {
-  width: 670px;
-  height: 670px;
+  width: 700px;
   position: absolute;
   bottom: -60px;
 }
@@ -131,7 +130,7 @@
     background-color: #4b47ff;
   }
 
-  a{
+  a {
     display: grid;
   }
 
@@ -142,5 +141,53 @@
     &:hover {
       scale: 1;
     }
+  }
+}
+
+@media (max-width: 1050px) {
+  .scroll-down {
+    display: none;
+  }
+
+  .photo {
+    bottom: 185px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-container {
+    height: 700px;
+  }
+
+  .shape {
+    height: 500px;
+    top: 321px;
+  }
+
+  .container-header {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    top: 517px;
+
+    span {
+      margin-left: -23px;
+    }
+  }
+
+  .container-social-media {
+    bottom: -150px;
+  }
+
+  .photo-shadow {
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0px;
   }
 }

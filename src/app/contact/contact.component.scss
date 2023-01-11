@@ -4,17 +4,17 @@
   padding-bottom: 200px;
   height: fit-content;
   position: relative;
-  background-image: url('./../../assets/img/bg-shadow-blue3.png');
+  background-image: url("./../../assets/img/bg-shadow-blue3.png");
   background-repeat: no-repeat;
   background-position: bottom;
   background-position-x: 0px;
   background-size: 400px;
 }
 
-.go-up{
+.go-up {
   position: absolute;
   bottom: 50px;
-  right:100px;
+  right: 100px;
   cursor: pointer;
 }
 
@@ -55,7 +55,7 @@
     }
   }
 
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -64,132 +64,169 @@
     margin-left: 40px;
     padding-right: 100px;
 
-    .succesfull-message{
-      color: #1CE6B6;
+    .succesfull-message {
+      color: #1ce6b6;
     }
 
-    .error-message-name{
+    .error-message-name {
       font-size: 10px;
-      color: #E61C40;
+      color: #e61c40;
       text-align: left;
       width: 100%;
       padding-left: 20px;
       opacity: 0;
     }
-  
-    #name:not(:focus):not(:placeholder-shown):invalid ~ .error-message-name{
-      opacity: 100%;
-    }
-  
-    .error-message-email{
-      font-size: 10px;
-      color: #E61C40;
-      text-align: left;
-      width: 100%;
-      padding-left: 20px;
-      opacity: 0;
-    }
-  
-    #email:not(:focus):not(:placeholder-shown):invalid ~ .error-message-email{
-      opacity: 100%;
-    }
-  
-    .error-message-text{
-      font-size: 10px;
-      color: #E61C40;
-      text-align: left;
-      width: 100%;
-      padding-left: 20px;
-      opacity: 0;
-    }
-  
-    #text:not(:focus):not(:placeholder-shown):invalid ~ .error-message-text{
+
+    #name:not(:focus):not(:placeholder-shown):invalid ~ .error-message-name {
       opacity: 100%;
     }
 
-    input{
-        width: 500px;
-        height: 40px;
-        margin-top: 10px;
-        background-color: #141d2f;
-        border: 1px solid #4b47ff;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 0px 10px;
-        outline: none;
-        color: white;
+    .error-message-email {
+      font-size: 10px;
+      color: #e61c40;
+      text-align: left;
+      width: 100%;
+      padding-left: 20px;
+      opacity: 0;
+    }
+
+    #email:not(:focus):not(:placeholder-shown):invalid ~ .error-message-email {
+      opacity: 100%;
+    }
+
+    .error-message-text {
+      font-size: 10px;
+      color: #e61c40;
+      text-align: left;
+      width: 100%;
+      padding-left: 20px;
+      opacity: 0;
+    }
+
+    #text:not(:focus):not(:placeholder-shown):invalid ~ .error-message-text {
+      opacity: 100%;
+    }
+
+    input {
+      width: 500px;
+      height: 40px;
+      margin-top: 10px;
+      background-color: #141d2f;
+      border: 1px solid #4b47ff;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 0px 10px;
+      outline: none;
+      color: white;
+      font-size: 16px;
+
+      &::placeholder {
         font-size: 16px;
+        color: white;
+      }
 
-        &::placeholder{
-            font-size: 16px;
-            color: white;
-        }
+      &:focus {
+        border-color: #00bee8;
+      }
 
-        &:focus{
-          border-color: #00BEE8;
-        }
+      &:not(:focus):not(:placeholder-shown):invalid {
+        border-color: #e61c40;
+        background-image: url("./../../assets/img/wrong.png");
+        background-repeat: no-repeat;
+        background-position-x: 466px;
+        background-position-y: 6px;
+      }
 
-        &:not(:focus):not(:placeholder-shown):invalid {
-          border-color: #E61C40;
-          background-image: url('./../../assets/img/wrong.png');
-          background-repeat: no-repeat;
-          background-position-x: 466px;
-          background-position-y: 6px;
-         }
-
-         &:not(:focus):not(:placeholder-shown):valid {
-          border-color: #1CE6B6;
-          background-image: url('./../../assets/img/right.png');
-          background-repeat: no-repeat;
-          background-position-x: 466px;
-          background-position-y: 6px;
-         }
+      &:not(:focus):not(:placeholder-shown):valid {
+        border-color: #1ce6b6;
+        background-image: url("./../../assets/img/right.png");
+        background-repeat: no-repeat;
+        background-position-x: 466px;
+        background-position-y: 6px;
+      }
     }
 
-    textarea{
-        width: 500px;
-        height: 250px;
-        margin-top: 10px;
-        background-color: #141d2f;
-        border: 1px solid #4b47ff;
-        border-radius: 10px;
-        box-sizing: border-box;
-        padding: 10px;
-        outline: none;
-        color: white;
+    textarea {
+      width: 500px;
+      height: 250px;
+      margin-top: 10px;
+      background-color: #141d2f;
+      border: 1px solid #4b47ff;
+      border-radius: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+      outline: none;
+      color: white;
+      font-size: 16px;
+      resize: none;
+
+      &::placeholder {
         font-size: 16px;
-        resize: none;
-        
+        font-family: "Poppins";
+        color: white;
+      }
 
-        &::placeholder{
-            font-size: 16px;
-            font-family: 'Poppins';
-            color: white;
-        }
+      &:focus {
+        border-color: #00bee8;
+      }
 
-        &:focus{
-          border-color: #00BEE8;
-        }
+      &:not(:focus):not(:placeholder-shown):invalid {
+        border-color: #e61c40;
+        background-image: url("./../../assets/img/wrong.png");
+        background-repeat: no-repeat;
+        background-position-x: 466px;
+        background-position-y: 6px;
+      }
 
-        &:not(:focus):not(:placeholder-shown):invalid {
-          border-color: #E61C40;
-          background-image: url('./../../assets/img/wrong.png');
-          background-repeat: no-repeat;
-          background-position-x: 466px;
-          background-position-y: 6px;
-         }
-
-         &:not(:focus):not(:placeholder-shown):valid {
-          border-color: #1CE6B6;
-          background-image: url('./../../assets/img/right.png');
-          background-repeat: no-repeat;
-          background-position-x: 466px;
-          background-position-y: 6px;
-         }
+      &:not(:focus):not(:placeholder-shown):valid {
+        border-color: #1ce6b6;
+        background-image: url("./../../assets/img/right.png");
+        background-repeat: no-repeat;
+        background-position-x: 466px;
+        background-position-y: 6px;
+      }
     }
   }
 }
 
-.d-none{
+@media (max-width: 1050px) {
+  .header-contactarea {
+    gap: 17px;
+
+    div {
+      width: 20px;
+    }
+  }
+
+  .container-contactarea {
+    padding-top: 40px;
+  }
+
+  .contactarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+
+    form {
+      padding-right: 0px;
+      align-items: flex-start;
+      margin-left: 0px;
+    }
+
+    .textarea {
+      margin-left: 0px;
+    }
+  }
+
+  .button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.d-none {
   display: none;
 }

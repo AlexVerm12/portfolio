@@ -4,7 +4,8 @@
   background-color: #141d2f;
   padding-bottom: 40px;
 
-  background-image: url("./../../assets/img/bg-shadow-lblue2.png"), url("./../../assets/img/bg-shadow-blue2.png");
+  background-image: url("./../../assets/img/bg-shadow-lblue2.png"),
+    url("./../../assets/img/bg-shadow-blue2.png");
   background-repeat: no-repeat;
   background-position-y: bottom, 380px;
   background-position-x: right, left;
@@ -61,10 +62,10 @@
     margin-right: 120px;
     margin-left: 100px;
 
-    @media (max-width:1200px){
-    margin-right:50px;
+    @media (max-width: 1200px) {
+      margin-right: 50px;
+    }
   }
-}
 
   .project-text-right {
     width: 500px;
@@ -107,7 +108,6 @@
   }
 }
 
-
 .container-project-left {
   width: 100%;
   display: flex;
@@ -130,9 +130,9 @@
     text-align: end;
     margin-left: 100px;
 
-    @media (max-width:1200px){
-        padding-right:50px;
-      }
+    @media (max-width: 1200px) {
+      padding-right: 50px;
+    }
 
     h6 {
       font-weight: 700;
@@ -202,6 +202,84 @@
 
     &:hover {
       background-color: #00bee8;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .container-protfolio{
+    background-position-y: bottom, center;
+  }
+  .container-project-right {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 0px;
+    margin: 60px 0px;
+
+    img {
+      margin: 0px 0px;
+      padding: 0px 37px;
+    }
+
+    .project-text-right {
+      padding: 0px 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 25px;
+      margin-top: -40px;
+
+      h6 {
+        color: #4b47ff;
+        line-height: normal;
+        margin: 0px 0px;
+      }
+
+      p {
+        line-height: normal;
+        color: #00bee8;
+        margin: 0px 0px;
+      }
+    }
+  }
+
+  .container-project-left {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 60px 0px;
+
+    img {
+      margin: 0px 0px;
+      padding: 0px 37px;
+    }
+
+    .project-text-left {
+      padding: 0px 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 25px;
+      margin-left: 0px;
+      margin-top: -40px;
+
+      h6 {
+        color: #4b47ff;
+        line-height: normal;
+        margin: 0px 0px;
+      }
+
+      p {
+        line-height: normal;
+        color: #00bee8;
+        margin: 0px 0px;
+      }
     }
   }
 }

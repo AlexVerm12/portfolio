@@ -70,5 +70,22 @@
     }
 }
 
+@media (max-width:1050px) {
+    .container-foto{
+        display: none;
+    }
+
+    .container-aboutme{
+        justify-content: center;
+        height:fit-content;
+        padding-top: 250px;
+    }
+
+    .container-text{
+        padding: 0px 37px;
+        width: 660px;
+    }
+}
+
 
     
