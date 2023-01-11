@@ -54,11 +54,34 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 200px;
+    width: 100vw;
+    height: calc(100vh - 90px);
+    background-color: #414856;
+    gap: 15px;
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    left: 0px;
+    z-index: 99;
+    animation: 225ms ease-in;
 
     a{
         color: white;
+        font-size: 21px;
+
+        &:hover{
+            color: #00BEE8;
+        }
+
+        &:focus{
+            border-color: #141D2F;
+        }
     }
+}
+
+.d-none{
+    display: none;
 }
 
 @media(max-width:1050px){
@@ -69,4 +92,9 @@
     .menu{
         gap:0px;
     }
+
+    .show-mobile{
+        display: flex;
+    }
 }
+

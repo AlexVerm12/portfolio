@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class MenuComponent {
 
+  openPopUp(){
+    document.getElementById(`popUp`)?.classList.remove('d-none');
+    document.getElementById(`openMenu`)?.classList.remove('show-mobile');
+    document.getElementById(`closeMenu`)?.classList.remove('d-none');
+  }
+
+  closePopUp(){
+    document.getElementById(`popUp`)?.classList.add('d-none');
+    document.getElementById(`openMenu`)?.classList.add('show-mobile');
+    document.getElementById(`closeMenu`)?.classList.add('d-none');
+  }
+
 }

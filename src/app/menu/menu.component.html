@@ -14,24 +14,25 @@
       <div class="underliner"></div>
     </div>
 
-    <img class="burger-menu d-none show-mobile" src="./assets/img/burger.png" />
+    <img id="openMenu" (click)="openPopUp()" class="burger-menu d-none show-mobile" src="./assets/img/burger.png" />
+    <img id="closeMenu" (click)="closePopUp()" class="burger-menu d-none" src="./assets/img/close-final.png" />
   </div>
 
-  <div class="menu-popup">
+  <div id="popUp" class="menu-popup d-none">
     <div class="menu-point">
-      <a href="#about-me">About me</a>
+      <a href="#about-me" (click)="closePopUp()">About me</a>
       <div class="underliner"></div>
     </div>
     <div class="">
-      <a href="#skills">Skills</a>
+      <a href="#skills" (click)="closePopUp()">Skills</a>
       <div class="underliner"></div>
     </div>
     <div class="">
-      <a href="#portfolio">Portfolio</a>
+      <a href="#portfolio" (click)="closePopUp()">Portfolio</a>
       <div class="underliner"></div>
     </div>
     <div class="">
-      <a href="#contact">Contact</a>
+      <a href="#contact" (click)="closePopUp()">Contact</a>
       <div class="underliner"></div>
     </div>
   </div>
