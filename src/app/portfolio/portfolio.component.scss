@@ -211,13 +211,13 @@
 }
 
 @media (max-width: 1050px) {
-.container-first-part{
-  span{
-    padding: 0px 37px;
+  .container-first-part {
+    span {
+      padding: 0px 37px;
+    }
   }
-}
 
-  .container-protfolio{
+  .container-protfolio {
     background-position-y: bottom, center;
   }
   .container-project-right {
@@ -294,78 +294,77 @@
   }
 }
 
-@media (max-width:720px){
-  .container-header{
-    
-    h2{
+@media (max-width: 720px) {
+  .container-header {
+    h2 {
       font-size: 45px;
       right: calc(50% - 145px);
     }
   }
 
-  .container-first-part{
+  .container-first-part {
     margin-bottom: 60px;
-    span{
+    span {
       margin-top: 50px;
     }
   }
 
-  .container-project-left{
-    img{
+  .container-project-left {
+    img {
       width: 80%;
       max-width: 450px;
     }
 
-    .project-text-left{
+    .project-text-left {
       width: auto;
-      p{
+      p {
         width: 80%;
         max-width: 500px;
       }
     }
   }
 
-  .container-project-right{
-    img{
+  .container-project-right {
+    img {
       width: 80%;
       max-width: 450px;
     }
 
-    .project-text-right{
+    .project-text-right {
       width: auto;
-      p{
+      p {
         width: 80%;
         max-width: 500px;
       }
     }
   }
 
-  .button-area{
-    .button-git{
+  .button-area {
+    .button-git {
       font-size: 20px;
     }
 
-    .button-live{
+    .button-live {
       font-size: 20px;
     }
   }
 }
 
-@media(max-width:580px){
-  .container-protfolio{
+@media (max-width: 580px) {
+  .container-protfolio {
     background-position-y: bottom, center;
     background-size: 300px, 300px;
   }
 }
 
-@media(max-width:500px){
-  .button-area{
+@media (max-width: 500px) {
+  .button-area {
     gap: 20px;
   }
 }
 
-@media(max-width:440px){
-  .container-protfolio{
+@media (max-width: 440px) {
+  .container-protfolio {
     background-position-y: 1200px, 890px;
     background-size: 300px, 280px;
   }

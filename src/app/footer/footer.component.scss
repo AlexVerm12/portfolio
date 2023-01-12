@@ -1,70 +1,69 @@
-.container-footer{
-    width: 100vw;
-    height: 200px;
-    background: #141D2F;
-    border-top: 4px solid #00BEE8;  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 100px;
-    box-sizing: border-box;
-
+.container-footer {
+  width: 100vw;
+  height: 200px;
+  background: #141d2f;
+  border-top: 4px solid #00bee8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 100px;
+  box-sizing: border-box;
 }
 
 .container-social-media {
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-  
-    a{
-      display: grid;
-    }
-  
-    img {
-      scale: 0.8;
-      cursor: pointer;
-  
-      &:hover {
-        scale: 1;
-      }
-    }
-}
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
 
-.copyright{
-    color: white;
-    font-size: 21px;
-}
-.imprint{
-    color: white;
+  a {
+    display: grid;
+  }
+
+  img {
+    scale: 0.8;
     cursor: pointer;
-    text-decoration: none;
+
+    &:hover {
+      scale: 1;
+    }
+  }
 }
 
-.first-part{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.copyright {
+  color: white;
+  font-size: 21px;
+}
+.imprint {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 
-.imprint-mobile{
+.first-part {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imprint-mobile {
   display: none;
   color: white;
   cursor: pointer;
   text-decoration: none;
 }
 
-@media (max-width:1050px){
-  .imprint{
+@media (max-width: 1050px) {
+  .imprint {
     display: none;
   }
 
-  .imprint-mobile{
+  .imprint-mobile {
     display: flex;
   }
 
-  .container-footer{
+  .container-footer {
     height: 340px;
     display: flex;
     align-items: center;
@@ -72,16 +71,15 @@
     flex-direction: column;
     padding: 0px 0px;
     gap: 20px;
+  }
+  .logo {
+    margin-bottom: 10px;
+  }
+}
 
-}
-.logo{
-  margin-bottom: 10px;
-}
-}
-
-@media(max-width:450px){
-  .container-footer{
-    span{
+@media (max-width: 450px) {
+  .container-footer {
+    span {
       font-size: 18px;
     }
   }

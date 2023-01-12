@@ -3,7 +3,7 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 
-  a{
+  a {
     text-decoration: none;
   }
 }
@@ -25,33 +25,33 @@ body {
   cursor: pointer;
   white-space: nowrap;
 
-  &:hover{
-    background-color: #4B47FF;
+  &:hover {
+    background-color: #4b47ff;
     padding: 20px 40px;
   }
 }
 
-.logo{
-width: 90px;
-cursor: pointer;
+.logo {
+  width: 90px;
+  cursor: pointer;
 }
 
-.d-none{
+.d-none {
   display: none;
 }
 
-@media(max-width:1050px){
-  .d-none-mobile{
+@media (max-width: 1050px) {
+  .d-none-mobile {
     display: none;
   }
 
-  .show-mobile{
+  .show-mobile {
     display: flex;
   }
 }
 
-@media(max-width:720px){
-  .main-button{
+@media (max-width: 720px) {
+  .main-button {
     font-size: 20px;
   }
 }
