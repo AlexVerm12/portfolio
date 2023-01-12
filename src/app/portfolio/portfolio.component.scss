@@ -161,7 +161,9 @@
   flex-direction: row;
   gap: 50px;
   padding-top: 20px;
+
   .button-live {
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -176,6 +178,7 @@
     border: unset;
     cursor: pointer;
     text-decoration: none;
+    white-space: nowrap;
 
     &:hover {
       background-color: #00bee8;
@@ -184,6 +187,7 @@
   }
 
   .button-git {
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -207,6 +211,12 @@
 }
 
 @media (max-width: 1050px) {
+.container-first-part{
+  span{
+    padding: 0px 37px;
+  }
+}
+
   .container-protfolio{
     background-position-y: bottom, center;
   }
@@ -281,5 +291,82 @@
         margin: 0px 0px;
       }
     }
+  }
+}
+
+@media (max-width:720px){
+  .container-header{
+    
+    h2{
+      font-size: 45px;
+      right: calc(50% - 145px);
+    }
+  }
+
+  .container-first-part{
+    margin-bottom: 60px;
+    span{
+      margin-top: 50px;
+    }
+  }
+
+  .container-project-left{
+    img{
+      width: 80%;
+      max-width: 450px;
+    }
+
+    .project-text-left{
+      width: auto;
+      p{
+        width: 80%;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .container-project-right{
+    img{
+      width: 80%;
+      max-width: 450px;
+    }
+
+    .project-text-right{
+      width: auto;
+      p{
+        width: 80%;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .button-area{
+    .button-git{
+      font-size: 20px;
+    }
+
+    .button-live{
+      font-size: 20px;
+    }
+  }
+}
+
+@media(max-width:580px){
+  .container-protfolio{
+    background-position-y: bottom, center;
+    background-size: 300px, 300px;
+  }
+}
+
+@media(max-width:500px){
+  .button-area{
+    gap: 20px;
+  }
+}
+
+@media(max-width:440px){
+  .container-protfolio{
+    background-position-y: 1200px, 890px;
+    background-size: 300px, 280px;
   }
 }

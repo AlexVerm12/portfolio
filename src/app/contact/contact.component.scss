@@ -44,6 +44,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100vw;
+  box-sizing: border-box;
 
   .textarea {
     color: white;
@@ -72,7 +73,6 @@
       font-size: 10px;
       color: #e61c40;
       text-align: left;
-      width: 100%;
       padding-left: 20px;
       opacity: 0;
     }
@@ -85,7 +85,6 @@
       font-size: 10px;
       color: #e61c40;
       text-align: left;
-      width: 100%;
       padding-left: 20px;
       opacity: 0;
     }
@@ -98,7 +97,6 @@
       font-size: 10px;
       color: #e61c40;
       text-align: left;
-      width: 100%;
       padding-left: 20px;
       opacity: 0;
     }
@@ -224,6 +222,62 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .header-contactarea {
+    h2 {
+      font-size: 45px;
+    }
+  }
+
+  .go-up {
+    bottom: 37px;
+    right: 37px;
+  }
+
+  .contactarea {
+    width: 100%;
+    .textarea {
+      width: 92%;
+      max-width: 500px;
+    }
+    h3 {
+      font-size: 23px;
+    }
+      
+   
+  }
+}
+
+
+@media (max-width: 580px) {
+  .contactarea {
+    padding-left: 37px;
+    align-items: flex-start;
+
+    .container-form{
+      width: 100%;
+
+      form {
+        width: 100%;
+        input {
+          width: 92%;
+          max-width: 500px;
+        }
+  
+        textarea {
+          width: 92%;
+          max-width: 500px;
+        }
+
+        .button-container{
+          width: 92%;
+          max-width: 500px;
+        }
+      }
+    }
   }
 }
 

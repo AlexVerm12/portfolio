@@ -9,6 +9,7 @@ body {
 }
 
 .main-button {
+  height: fit-content;
   color: white;
   font-size: 23px;
   font-weight: 400;
@@ -46,5 +47,11 @@ cursor: pointer;
 
   .show-mobile{
     display: flex;
+  }
+}
+
+@media(max-width:720px){
+  .main-button{
+    font-size: 20px;
   }
 }
