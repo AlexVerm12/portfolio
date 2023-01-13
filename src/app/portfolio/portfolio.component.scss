@@ -3,13 +3,14 @@
   height: fit-content;
   background-color: #141d2f;
   padding-bottom: 40px;
-
+  max-width: 1600px;
   background-image: url("./../../assets/img/bg-shadow-lblue2.png"),
     url("./../../assets/img/bg-shadow-blue2.png");
   background-repeat: no-repeat;
   background-position-y: bottom, 380px;
   background-position-x: right, left;
   background-size: auto, 490px;
+  position: relative;
 }
 
 .container-first-part {
@@ -17,7 +18,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   padding-top: 120px;
   margin-bottom: 80px;
 

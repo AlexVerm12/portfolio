@@ -9,6 +9,7 @@
   background-position: bottom;
   background-position-x: 0px;
   background-size: 400px;
+  max-width: 1600px;
 }
 
 .go-up {
@@ -43,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 100vw;
+  width: 100%;
   box-sizing: border-box;
 
   .textarea {

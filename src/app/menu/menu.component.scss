@@ -10,6 +10,8 @@
   right: 0;
   top: 0;
   z-index: 1000;
+  max-width: 1600px;
+  box-sizing: border-box;
 }
 
 .menu {
@@ -91,5 +93,16 @@
 
   .show-mobile {
     display: flex;
+  }
+}
+
+@media (min-width:1601px){
+  .header-container{
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
