@@ -13,32 +13,32 @@ export class ContactComponent {
   @ViewChild('textField') textField!: ElementRef;
   @ViewChild('button') button!: ElementRef;
 
+  disableForm() {
+    this.nameField.nativeElement.disabled = true;
+    this.emailField.nativeElement.disabled = true;
+    this.textField.nativeElement.disabled = true;
+    this.button.nativeElement.disabled = true;
+  }
+
+  enableForm() {
+    this.nameField.nativeElement.disabled = false;
+    this.emailField.nativeElement.disabled = false;
+    this.textField.nativeElement.disabled = false;
+    this.button.nativeElement.disabled = false;
+  }
+
   async sendMail() {
-    let nameField = this.nameField.nativeElement;
-    let emailField = this.emailField.nativeElement;
-    let textField = this.textField.nativeElement;
-    let button = this.button.nativeElement;
-
-    nameField.disabled = true;
-    emailField.disabled = true;
-    textField.disabled = true;
-    button.disabled = true;
-
+    this.disableForm();
     let fd = new FormData();
-    fd.append('name', nameField.value);
-    fd.append('email', emailField.value);
-    fd.append('message', textField.value);
+    fd.append('name', this.nameField.nativeElement.value);
+    fd.append('email', this.emailField.nativeElement.value);
+    fd.append('message', this.textField.nativeElement.value);
     //senden
     await fetch('https://alexandrevermeersch.com/send_mail/send_mail.php', {
       method: 'POST',
       body: fd,
     });
-
-    nameField.disabled = false;
-    emailField.disabled = false;
-    textField.disabled = false;
-    button.disabled = false;
-
+    this.enableForm();
     window.location.href = './index.html';
     alert('Email was send successfully!');
   }
