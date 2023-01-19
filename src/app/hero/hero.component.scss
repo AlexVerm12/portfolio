@@ -4,7 +4,7 @@
   height: 600px;
   position: relative;
   margin-top: 75px;
-  max-width: 1600px;
+  max-width: 1920px;
 }
 
 .shape {
@@ -109,6 +109,11 @@
   right: 60px;
   bottom: 45px;
   transform: rotate(90deg);
+  cursor: pointer;
+
+  &:hover{
+    color: #00bee8;
+  }
 
   span {
     margin-right: 10px;
