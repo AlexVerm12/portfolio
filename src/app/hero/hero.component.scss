@@ -107,7 +107,7 @@
   position: absolute;
   box-sizing: border-box;
   right: 60px;
-  bottom: 45px;
+  bottom: -40px;
   transform: rotate(90deg);
   cursor: pointer;
 
@@ -126,7 +126,7 @@
 
 .container-social-media {
   position: absolute;
-  bottom: -10px;
+  bottom: -40px;
   left: 0;
   display: flex;
   justify-content: space-between;
