@@ -15,7 +15,7 @@
     </div>
 
     <div class="container-form">
-      <form (submit)="sendMail()" ngNativeValidate #myForm>
+      <form id="myForm" (submit)="sendMail()" ngNativeValidate #myForm>
         <input
           id="name"
           type="text"
@@ -48,7 +48,7 @@
         <div class="button-container">
           <button #button class="main-button">Send message :)</button>
         </div>
-        <span id="successful" class="succesfull-message d-none"
+        <span id="successful" class="succesfull-message opacity-0"
           >Your email has been send successfully!</span
         >
       </form>

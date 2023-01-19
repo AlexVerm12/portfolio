@@ -39,7 +39,10 @@ export class ContactComponent {
       body: fd,
     });
     this.enableForm();
-    window.location.href = './index.html';
-    alert('Email was send successfully!');
+    document.getElementById('successful')?.classList.remove('opacity-0');
+    setTimeout(()=>{
+      window.location.href = '/index.html';
+    }, 4000)
+    
   }
 }
